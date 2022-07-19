@@ -1,0 +1,16 @@
+REPEL
+By default, all instances of repl.REPLServer use an evaluation function that evaluates JavaScript expressions and provides access to Node.js built-in modules. 
+
+File based module
+use export to all the functions in different file.
+
+previosly;
+// const square={
+//   area:(a)=>(a*a),
+//   perimeter:(a)=>(4*a)
+// }
+
+after;
+exports.area = (a) => (a * a);
+exports.perimeter = (a) => (4 * a);
+
